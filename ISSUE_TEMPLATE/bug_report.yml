@@ -1,0 +1,21 @@
+name: Bug report
+description: Something is broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: {label: What happened?, description: Expected vs actual}
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes: {label: Steps to reproduce}
+    validations: {required: true}
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [L1 - config/copy/simple UI, L2 - logic in one area, L3 - cross-cutting/data/architecture]
+    validations: {required: true}
+  - type: input
+    id: env
+    attributes: {label: Environment (dev/staging/prod, browser, version)}
