@@ -1,0 +1,15 @@
+name: Feature / task
+description: New work to plan
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes: {label: Goal and user value}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes: {label: Acceptance criteria, description: How do we know it is done?}
+    validations: {required: true}
+  - type: textarea
+    id: spec
+    attributes: {label: Spec / design link (plan-first)}
